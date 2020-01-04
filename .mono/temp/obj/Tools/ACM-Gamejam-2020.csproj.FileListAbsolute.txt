@@ -1,5 +1,0 @@
-C:\Users\crand\Documents\acm-gamejam-2020\.mono\temp\bin\Tools\ACM-Gamejam-2020.dll
-C:\Users\crand\Documents\acm-gamejam-2020\.mono\temp\bin\Tools\ACM-Gamejam-2020.pdb
-C:\Users\crand\Documents\acm-gamejam-2020\.mono\temp\obj\Tools\ACM-Gamejam-2020.csprojAssemblyReference.cache
-C:\Users\crand\Documents\acm-gamejam-2020\.mono\temp\obj\Tools\ACM-Gamejam-2020.dll
-C:\Users\crand\Documents\acm-gamejam-2020\.mono\temp\obj\Tools\ACM-Gamejam-2020.pdb
