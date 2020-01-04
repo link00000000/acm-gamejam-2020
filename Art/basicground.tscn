@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Art/generic.res" type="TileSet" id=1]
+
+[node name="Ground" type="StaticBody2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 1179648, 1, 8, 1179649, 1, 8, 1179650, 1, 8, 1179651, 1, 8, 1179652, 1, 8, 1179653, 1, 8, 1179654, 1, 8, 1179655, 1, 8, 1179656, 1, 8, 1179657, 1, 8, 1179658, 1, 8, 1179659, 1, 8, 1179660, 1, 8, 1179661, 1, 8, 1179662, 1, 8, 1179663, 1, 8, 1179664, 1, 8, 1179665, 1, 8, 1179666, 1, 8, 1179667, 1, 8, 1179668, 1, 8, 1179669, 1, 8, 1179670, 1, 8, 1179671, 1, 8, 1179672, 1, 8, 1179673, 1, 8, 1179674, 1, 8, 1179675, 1, 8, 1179676, 1, 8, 1179677, 1, 8, 1179678, 1, 8, 1179679, 1, 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
