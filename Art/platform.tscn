@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Art/generic.res" type="TileSet" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -65536, 1, 6, -65535, 1, 7, -65534, 1, 10, -65533, 1, 11, 1, 1, 131079, 2, 1, 131082 )
