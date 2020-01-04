@@ -1,2 +1,1 @@
-﻿63542
 C:\Program Files (x86)\Godot\Godot.exe
