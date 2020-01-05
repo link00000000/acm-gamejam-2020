@@ -1,20 +1,16 @@
 using Godot;
-using System;
+using GameLogic;
 
 public class Player : KinematicBody2D
 {
     [Export] public float MaxSpeed = 800f;
-
     [Export] public float Inertia = .005f;
-
     [Export] public float Friction = 8f;
-
     [Export] public float Weight = 100f;
-
     [Export] public float MaxFallSpeed = 1000f;
-
     [Export] public float Jump = 1500f;
-
+    [Export] public OriginatingTeam Team;
+    
     private Vector2 _velocity = new Vector2();
 
     public override void _Process(float delta)
@@ -29,6 +25,14 @@ public class Player : KinematicBody2D
         {
             acceleration.x += 1;
         }
+
+        if (Input.IsActionPressed("p1_fire"))
+        {
+            var newSeed = GetParent().GetNode<Seed>("Seed").Duplicate();
+            (newSeed as Seed).Position = this.Position;
+            this.GetParent().AddChild(newSeed);
+        }
+        
         if (Input.IsActionPressed("p1_jump") && IsOnFloor())
         {
             _velocity.y = -Jump;

@@ -9,14 +9,19 @@ namespace GameLogic
         TeamB
     }
 
-    public class Seed : Node2D
+    public class Seed : RigidBody2D
     {
         [Export] public OriginatingTeam team;
         
-        public OriginatingTeam getOrigin()
+        public void _on_Seed_body_entered(Node body)
         {
-            return team;
+            // This is disgusting
+            this.Visible = false;
+            Hide();
+            this.GetParent().GetNode(this.Name);
+            this.QueueFree();
         }
+        
     }
 }
     

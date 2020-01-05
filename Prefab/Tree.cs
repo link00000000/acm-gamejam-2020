@@ -14,9 +14,6 @@ public class Tree : Node2D
     [Export] public Texture TeamB_Texture;
     [Export] public OriginatingTeam Team;
 
-
-    
-
     // Called when the node enters the scene tree for the first time.
     public void body_entered ( PhysicsBody2D body ){
 
