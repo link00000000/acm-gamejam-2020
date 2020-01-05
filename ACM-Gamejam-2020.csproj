@@ -54,7 +54,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenes\Countdown.cs" />
+    <Compile Include="Scenes\FPSCounter.cs" />
     <Compile Include="Scenes\Player.cs" />
+    <Compile Include="Scenes\Player2.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
