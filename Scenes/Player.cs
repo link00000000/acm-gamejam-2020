@@ -29,7 +29,7 @@ public class Player : KinematicBody2D
         {
             acceleration.x += 1;
         }
-        if (Input.IsActionPressed("p1_select") && IsOnFloor())
+        if (Input.IsActionPressed("p1_jump") && IsOnFloor())
         {
             _velocity.y = -Jump;
         }
