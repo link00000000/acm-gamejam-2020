@@ -21,15 +21,15 @@ public class Player : KinematicBody2D
     {
         var acceleration = new Vector2();
 
-        if (Input.IsActionPressed("ui_left"))
+        if (Input.IsActionPressed("p1_left"))
         {
             acceleration.x -= 1;
         }
-        if (Input.IsActionPressed("ui_right"))
+        if (Input.IsActionPressed("p1_right"))
         {
             acceleration.x += 1;
         }
-        if (Input.IsActionPressed("ui_select") && IsOnFloor())
+        if (Input.IsActionPressed("p1_select") && IsOnFloor())
         {
             _velocity.y = -Jump;
         }
