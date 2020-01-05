@@ -1,11 +1,14 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Art/basicground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Player2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Prefab/Seed.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Countdown.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/gamelogic.cs" type="Script" id=6]
 
 [node name="Game" type="Node2D"]
+script = ExtResource( 6 )
 
 [node name="Ground" parent="." instance=ExtResource( 1 )]
 
@@ -24,3 +27,10 @@ position = Vector2( -152, -69.0002 )
 collision_layer = 4
 collision_mask = 1
 can_sleep = false
+
+[node name="Countdown" parent="." instance=ExtResource( 5 )]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 311.0
+margin_bottom = 86.0
+[connection signal="TimerFinished" from="Countdown" to="." method="on_timer_expired"]
