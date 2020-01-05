@@ -12,11 +12,6 @@ namespace GameLogic
     public class Seed : Node2D
     {
         [Export] public OriginatingTeam team;
-        
-        public OriginatingTeam getOrigin()
-        {
-            return team;
-        }
     }
 }
     
