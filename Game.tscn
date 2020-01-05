@@ -7,8 +7,9 @@
 
 [node name="Player1" parent="." instance=ExtResource( 1 )]
 position = Vector2( 261.776, 49.037 )
-MaxSpeed = 500.0
-Jump = 2000.0
+MaxSpeed = 800.0
+Weight = 100.0
+Jump = 1500.0
 
 [node name="Node2D" parent="." instance=ExtResource( 2 )]
 position = Vector2( 198.456, 310.123 )

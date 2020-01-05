@@ -3,17 +3,17 @@ using System;
 
 public class Player : KinematicBody2D
 {
-    [Export] public float MaxSpeed = 1000f;
+    [Export] public float MaxSpeed = 800f;
 
     [Export] public float Inertia = .005f;
 
     [Export] public float Friction = 8f;
 
-    [Export] public float Weight = 150f;
+    [Export] public float Weight = 100f;
 
     [Export] public float MaxFallSpeed = 1000f;
 
-    [Export] public float Jump = 2000f;
+    [Export] public float Jump = 1500f;
 
     private Vector2 _velocity = new Vector2();
 
