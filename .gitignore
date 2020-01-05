@@ -533,3 +533,6 @@ export_presets.cfg
 
 # Visual Studio Code
 .vscode/
+
+# Jetbrains IDE
+.idea/

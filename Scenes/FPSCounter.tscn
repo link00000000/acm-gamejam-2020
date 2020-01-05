@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/FPSCounter.cs" type="Script" id=1]
+
+[node name="Panel" type="Panel"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -52.0
+margin_bottom = 16.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Counter" type="Label" parent="."]
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 51.0
+margin_bottom = 15.0
+text = "FPS:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
