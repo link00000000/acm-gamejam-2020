@@ -1,19 +1,19 @@
 using Godot;
 using System;
 
-public class Player : KinematicBody2D
+public class Player2 : KinematicBody2D
 {
-    [Export] public float MaxSpeed = 800f;
+    [Export] public float MaxSpeed = 1000f;
 
     [Export] public float Inertia = .005f;
 
     [Export] public float Friction = 8f;
 
-    [Export] public float Weight = 100f;
+    [Export] public float Weight = 150f;
 
     [Export] public float MaxFallSpeed = 1000f;
 
-    [Export] public float Jump = 1500f;
+    [Export] public float Jump = 2000f;
 
     private Vector2 _velocity = new Vector2();
 
@@ -21,15 +21,15 @@ public class Player : KinematicBody2D
     {
         var acceleration = new Vector2();
 
-        if (Input.IsActionPressed("ui_left"))
+        if (Input.IsActionPressed("p2_left"))
         {
             acceleration.x -= 1;
         }
-        if (Input.IsActionPressed("ui_right"))
+        if (Input.IsActionPressed("p2_right"))
         {
             acceleration.x += 1;
         }
-        if (Input.IsActionPressed("ui_select") && IsOnFloor())
+        if (Input.IsActionPressed("p2_jump") && IsOnFloor())
         {
             _velocity.y = -Jump;
         }

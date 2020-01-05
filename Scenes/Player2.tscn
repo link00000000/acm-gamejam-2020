@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/Player.cs" type="Script" id=2]
+[ext_resource path="res://Scenes/Player2.cs" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 31.2033, 32.1493 )
+extents = Vector2( 30.913, 31.9866 )
 
 [node name="Area2D" type="KinematicBody2D"]
 script = ExtResource( 2 )
