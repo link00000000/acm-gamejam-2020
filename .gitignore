@@ -531,5 +531,8 @@ export_presets.cfg
 
 # End of https://www.gitignore.io/api/godot,csharp,visualstudio,visualstudiocode
 
+# Visual Studio Code
+.vscode/
+
 # Jetbrains IDE
 .idea/
